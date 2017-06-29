@@ -12,7 +12,7 @@ namespace VidlyExample.Models
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="Please enter a name")]
         public string Name { get; set; }
 
         [Required]
@@ -27,10 +27,15 @@ namespace VidlyExample.Models
 
         [Required]
         [Display(Name = "Number in Stock")]
-        public int StockNumber { get; set; }
+        [Range(1,20)]
+        public byte StockNumber { get; set; }
         
 
         public Genre Genre { get; set; }
+        [Display(Name="Genre")]
+        [Required]
         public byte GenreId { get; set; }
+
+       
     }
 }
