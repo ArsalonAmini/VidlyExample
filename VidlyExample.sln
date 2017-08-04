@@ -15,6 +15,7 @@ Global
 		{B75B7907-B926-400F-A078-810E6FDAA01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B75B7907-B926-400F-A078-810E6FDAA01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B75B7907-B926-400F-A078-810E6FDAA01A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B75B7907-B926-400F-A078-810E6FDAA01A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

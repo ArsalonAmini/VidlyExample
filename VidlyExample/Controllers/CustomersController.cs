@@ -3,6 +3,8 @@ using System.Web.Mvc;
 using VidlyExample.Models;
 using System.Data.Entity;
 using VidlyExample.ViewModels;
+using System.Runtime.Caching;
+using System.Collections.Generic;
 
 namespace VidlyExample.Controllers
 {
@@ -65,6 +67,12 @@ namespace VidlyExample.Controllers
 
         public ViewResult Index()
         {
+            if(MemoryCache.Default["Customers"] == null)
+            {
+                MemoryCache.Default["Customers"] = _context.Genres.ToList();
+            }
+
+            var customers = MemoryCache.Default["Customers"] as IEnumerable<Customer>;
             return View();
         }
 

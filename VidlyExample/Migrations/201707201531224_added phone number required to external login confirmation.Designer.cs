@@ -7,13 +7,13 @@ namespace VidlyExample.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-beta1-60406")]
-    public sealed partial class SeedUsers : IMigrationMetadata
+    public sealed partial class addedphonenumberrequiredtoexternalloginconfirmation : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(SeedUsers));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addedphonenumberrequiredtoexternalloginconfirmation));
         
         string IMigrationMetadata.Id
         {
-            get { return "201707111437209_SeedUsers"; }
+            get { return "201707201531224_added phone number required to external login confirmation"; }
         }
         
         string IMigrationMetadata.Source
